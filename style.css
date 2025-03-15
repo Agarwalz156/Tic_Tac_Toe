@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #15616D;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5vmin;
+    padding: 2vmin;
+    border-radius: 2vmin;
+    height: 70%;
+    background-color: #FFECD1;
+    box-shadow: 0 0 2vmin rgba(0, 0, 0, 0.2);
+}
+
+.box {
+    width: 20vmin;
+    height: 20vmin;
+    border-radius: 2vmin;
+    border: 0.5vmin solid #FF7D00;
+    box-shadow: 0 0 1vmin rgba(0, 0, 0, 0.3);
+    font-size: 7.5rem;
+
+    color: #78290F;
+    background-color: #FFECD1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+button {
+    padding: 2rem 4rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2vmin;
+    border: none;
+    margin: 0;
+    transition: background 0.2s ease-in-out, transform 0.2s;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#Reset-btn, #new-btn {
+    background-color: #78290F;
+    color: #FFECD1;
+    width: 22rem;
+}
+
+#msg {
+    color: #FF7D00;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 2vmin;
+}
+
+.msg-container {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    background-color: #FFECD1;
+    padding: 2rem;
+    border-radius: 2vmin;
+    box-shadow: 0 0 1.5vmin rgba(0, 0, 0, 0.2);
+}
+
+.show {
+    display: flex;
+}
